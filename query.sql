@@ -5,7 +5,7 @@ SELECT
 FROM
     civicrm_case_contact contact
         LEFT JOIN
-    civicrm_case case ON (case.id = contact.case_id)
+    civicrm_case `case` ON (case.id = contact.case_id)
         LEFT JOIN
     civicrm_contact users ON (users.id = contact.contact_id)
 WHERE
